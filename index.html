@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit | portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+
+    <header class="header" id="header">
+
+        <a href="#" class="logo">CODER</a>
+
+        <nav class="navbar">
+            <ul id="sidemenu">
+                <li><a href="#home" onclick="home()">Home</a></li>
+                <li><a href="#about" onclick="about()">About</a></li>
+                <li><a href="#services" onclick="services()">Services</a></li>
+                <li><a href="#portfolio" onclick="project()">Project</a></li>
+                <li><a href="#contact" onclick="contact()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+        </nav>
+
+        <div class="nav-button">
+            <button class="btn btn2"><a href="resume folder/Mohit cv.pdf" target="_blank">Download CV <i
+                        class="fa-regular fa-file"></i></a></button>
+        </div>
+
+        <i class="fa-solid fa-bars" id="burgermenu" onclick="openmenu()"></i>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h4>Hi, Myself</h4>
+            <h1>Mohit</h1>
+            <h3>And I'm <span class="typedText"></span></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit esse incidunt laborum numquam, ipsam
+                perspiciatis vero, laudantium temporibus possimus sunt harum nihil libero distinctio aperiam ad
+                voluptatibus quos doloribus quae, repellat sint provident facere animi id! Nostrum obcaecati itaque
+                nemo!</p>
+            <div class="media-icon">
+                <a href="https://www.instagram.com/kushwah1099?igsh=MTdjYWYzeG9seHdiZw==" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/mohit.kushwah.3551" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/MohitKushw86245?t=NAjDm_yuHmAIxOhtEghbBA&s=09" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a href="https://wa.me/919599766270" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="resume folder/Mohit cv.pdf" class="btn" target="_blank">Download CV <i
+                    class="fa-regular fa-file"></i></a>
+        </div>
+        <div class="home-img">
+            <img src="images/profile.jpeg">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi commodi vero. Cupiditate
+                        tempora repudiandae omnis totam rem esse aliquid quo iure, eum odio harum minima excepturi
+                        nobis, nihil explicabo? Perspiciatis velit ipsum laboriosam nisi? Ullam, quam tempora! Quaerat,
+                        doloribus.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer</li>
+                            <li><span>Web</span><br>Devlopment</li>
+                            <li><span>Graphic</span><br>Designer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Fresher</span><br></li>
+                            <!-- <li><span>Fresher</span><br>Lakshya Computer Institue</li>
+                            <li><span>Fresher</span><br>Lakshya Computer Institue</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Web Devlopment</span><br>Lakshya Computer Institue</li>
+                            <li><span>Bachelor of Arts</span><br>Delhi University</li>
+                            <li><span>12th</span><br>Central Board of Secondary Education(CBSE)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">My <span>Services</span></h1>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-brands fa-edge"></i>
+                <h3>UI/UX Designing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum accusantium corporis,
+                    excepturi aliquam</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Devlopment</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum accusantium corporis,
+                    excepturi aliquam</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Graphic Designer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum accusantium corporis,
+                    excepturi aliquam</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading">My <span>Project</span></h1>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/travel.jpg" alt="">
+                <div class="layer">
+                    <h4>Travel</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, dolores!</p>
+                    <a href="https://mohitkushwah14032000.github.io/Tourpedia/" target="_blank"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/shoping cover photo.png" alt="">
+                <div class="layer">
+                    <h4>Ecommerce</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, dolores!</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/food.jpg" alt="">
+                <div class="layer">
+                    <h4>Food</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, dolores!</p>
+                    <a href="https://mohitkushwah14032000.github.io/Foodihub/"><i
+                            class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact <span>Us</span></h1>
+
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Contact Info</h2>
+                <div class="address-content">
+                    <a href="https://www.google.co.in/maps/@28.42624,77.0801664,11z?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank"><i class="fa-solid fa-location-dot"></i><span> Dabri, New Delhi-110045,
+                            India.
+                        </span>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
+                            class="fa-solid fa-envelope"></i><span>mk751400@gamil.com</span>
+                    </a>
+
+                    <a href="https://call2friends.com/free-calls" target="_blank"><i
+                            class="fa-solid fa-phone-volume"></i><span>+91 9599766270 </span>
+                    </a>
+                </div>
+                <div class="socialIcons">
+                    <a href="https://www.instagram.com/kushwah1099?igsh=MTdjYWYzeG9seHdiZw==" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/mohit.kushwah.3551" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/MohitKushw86245?t=NAjDm_yuHmAIxOhtEghbBA&s=09" target="_blank"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://wa.me/919599766270" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+
+            </div>
+            <div class="contact-right">
+                <h2>NewsLetter</h2>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="footerBottom">
+                <p>All Rights Reserved By CODER &copy;2024 | Designed by MOHIT
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
